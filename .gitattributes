@@ -1,0 +1,8 @@
+*.md text eol=lf
+*.sql text eol=lf
+*.ipynb text eol=lf
+*.pdf binary
+*.pbix binary
+*.xlsm binary
+*.jpg binary
+*.png binary

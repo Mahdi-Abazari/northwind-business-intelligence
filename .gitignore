@@ -1,0 +1,40 @@
+# Submitted reports and assignment materials kept locally
+/IT_Project_Description.pdf
+/Project_Report.pdf
+/Peoject_Report_Group1.*
+/Phase_0_Business_Understanding/
+/Phase_6_Managerial_Insights/
+
+# Raw data, database state, and deployment backups
+/Phase_1_DataPreprocessing_python/dirty_data/
+/Phase_1_DataPreprocessing_python/data_clean/
+/Phase_3_Transactional_Database_Design_Access/
+/Phase_4_Data_Engineering_SQL/NorthwindDB_Full_Final.sql
+/Phase_7_BI_Deployment_WordPress/
+*.accdb
+*.laccdb
+*.mdb
+*.db
+*.sqlite
+*.bak
+*.daf
+
+# Local originals with saved outputs or machine-specific metadata
+/Phase_1_DataPreprocessing_python/Phase1_Group1.ipynb
+/Phase_2_Operational_Data_preparation_Excel/Phase2_group1.xlsm
+
+# Local build files and credentials
+/tmp/
+data_clean/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.toc
+*.synctex*
+.env
+.env.*
+*.pem
+*.key
