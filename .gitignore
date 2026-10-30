@@ -5,13 +5,13 @@
 /Phase_0_Business_Understanding/
 /Phase_6_Managerial_Insights/
 
-# Raw data, database state, and deployment backups
+# Raw data, SQL database state, and deployment backups
 /Phase_1_DataPreprocessing_python/dirty_data/
 /Phase_1_DataPreprocessing_python/data_clean/
-/Phase_3_Transactional_Database_Design_Access/
 /Phase_4_Data_Engineering_SQL/NorthwindDB_Full_Final.sql
 /Phase_7_BI_Deployment_WordPress/
 *.accdb
+!/Phase_3_Transactional_Database_Design_Access/phase3_Group1.accdb
 *.laccdb
 *.mdb
 *.db

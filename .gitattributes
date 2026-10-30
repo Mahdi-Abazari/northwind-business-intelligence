@@ -3,6 +3,7 @@
 *.ipynb text eol=lf
 *.pdf binary
 *.pbix binary
+*.accdb binary
 *.xlsm binary
 *.jpg binary
 *.png binary

@@ -10,6 +10,7 @@
 
 - نوت‌بوک پاک‌سازی داده با Python: [مشاهده](Phase_1_DataPreprocessing_python/data_preprocessing.ipynb)
 - فایل Excel عملیاتی و ماکروها: [مشاهده](Phase_2_Operational_Data_preparation_Excel/operational_analysis.xlsm)
+- فایل Access شامل ساختار تراکنشی و داده‌های نمونه: [مشاهده](Phase_3_Transactional_Database_Design_Access/phase3_Group1.accdb)
 - پنج اسکریپت طراحی و تحلیل SQL: [مشاهده](Phase_4_Data_Engineering_SQL/)
 - فایل Power BI با هفت صفحهٔ تحلیلی: [مشاهده](Phase_5_Strategic_Business_Intelligence_PowerBI/Phase_5_Group1.pbix)
 - گزارش کامل ۱۹۸ صفحه‌ای: [مشاهده](docs/Project_Report_Public.pdf)
@@ -20,4 +21,4 @@
 
 ## حدود انتشار
 
-فایل Access، دامپ کامل SQL، CSVهای خام، بکاپ وردپرس و شماره‌های دانشجویی روی جلد گزارش عمومی منتشر نشده‌اند. فایل‌های Excel و Power BI حاوی دادهٔ **نمونهٔ نورث‌ویند** هستند و برای بازبینی خروجی‌های پروژه در مخزن قرار گرفته‌اند.
+فایل Access با داده‌های **نمونهٔ نورث‌ویند** منتشر شده است. دامپ کامل SQL، CSVهای خام، بکاپ وردپرس و شماره‌های دانشجویی روی جلد گزارش عمومی منتشر نشده‌اند. فایل‌های Excel و Power BI نیز حاوی دادهٔ نمونه هستند و برای بازبینی خروجی‌های پروژه در مخزن قرار گرفته‌اند.

@@ -2,7 +2,7 @@
 
 **An academic group project that turns Northwind operational data into decision-ready reporting.** The work covers business understanding, Python and Excel preparation, relational modeling, SQL engineering, Power BI dashboards, managerial analysis, and web presentation.
 
-**Explore:** [Full project report (PDF)](docs/Project_Report_Public.pdf) · [Power BI report](Phase_5_Strategic_Business_Intelligence_PowerBI/Phase_5_Group1.pbix) · [Technical analysis](docs/PROJECT_ANALYSIS.md) · [خلاصهٔ فارسی](README.fa.md)
+**Explore:** [Full project report (PDF)](docs/Project_Report_Public.pdf) · [Access database](Phase_3_Transactional_Database_Design_Access/phase3_Group1.accdb) · [Power BI report](Phase_5_Strategic_Business_Intelligence_PowerBI/Phase_5_Group1.pbix) · [Technical analysis](docs/PROJECT_ANALYSIS.md) · [خلاصهٔ فارسی](README.fa.md)
 
 ![Executive dashboard: sales, profit, growth, and structural risk](docs/images/01-executive-overview.jpg)
 
@@ -13,8 +13,9 @@
 | Area | What was built |
 | --- | --- |
 | Business problem | Connect sales, customers, products, employees, shipping, and discounts to management decisions |
-| Data | Northwind sample data; raw CSVs and database files stay outside this repository |
+| Data | Northwind sample data; raw CSVs and the full SQL dump stay outside this repository |
 | Data preparation | Python cleaning notebook and a macro-enabled Excel operational workbook |
+| Transactional model | Access database with schema, relationships, forms, reports, and sample data |
 | Data engineering | Relational schema, analytical SQL, views, indexing, and performance exploration |
 | Analytics model | `FactSales` with customer, employee, product, shipper, and date dimensions |
 | Reporting | Seven Power BI report pages and a 198-page Persian project report |
@@ -41,7 +42,7 @@ The analytical layer uses `FactSales` and dimensions for customers, employees, p
 | 0 | Business model, process map, data entities, and KPIs | [Project report](docs/Project_Report_Public.pdf) |
 | 1 | Missing values, duplicates, types, outliers, and feature engineering | [Clean Python notebook](Phase_1_DataPreprocessing_python/data_preprocessing.ipynb) |
 | 2 | Operational data preparation, Power Query, data validation, and VBA automation | [Excel workbook](Phase_2_Operational_Data_preparation_Excel/operational_analysis.xlsm) |
-| 3 | Transactional schema, relationships, forms, and reports in Access | [Design documented in report](docs/Project_Report_Public.pdf) |
+| 3 | Transactional schema, relationships, forms, and reports in Access | [Access database](Phase_3_Transactional_Database_Design_Access/phase3_Group1.accdb) and [design report](docs/Project_Report_Public.pdf) |
 | 4 | MySQL schema, analytical queries, performance tuning, and reporting views | [Five SQL scripts](Phase_4_Data_Engineering_SQL/) |
 | 5 | Star schema, DAX KPIs, and interactive Power BI pages | [Power BI file](Phase_5_Strategic_Business_Intelligence_PowerBI/Phase_5_Group1.pbix) and screenshots below |
 | 6 | Management interpretation and strategic questions | [Analysis in report](docs/Project_Report_Public.pdf) |
@@ -81,6 +82,8 @@ The profit measure assumes a **fixed 30% margin**. Because its variance is zero,
 
 **Excel:** Open the [macro-enabled workbook](Phase_2_Operational_Data_preparation_Excel/operational_analysis.xlsm) in Excel to inspect the operational model. It contains sample Northwind tables and VBA; refreshing source queries requires the original input files.
 
+**Access:** Download and open the [`.accdb` file](Phase_3_Transactional_Database_Design_Access/phase3_Group1.accdb) in Microsoft Access to inspect the transactional tables, relationships, forms, and reports. It contains Northwind sample records.
+
 **Python:** Install dependencies, place the 13 original CSVs under `Phase_1_DataPreprocessing_python/dirty_data/`, and run the [notebook](Phase_1_DataPreprocessing_python/data_preprocessing.ipynb) from either the repository root or its phase folder:
 
 ```bash
@@ -92,11 +95,11 @@ jupyter lab
 
 ## Data policy and limitations
 
-- No Access database, full SQL dump, raw CSV dataset, or WordPress site backup is published. SQL source files are included because they document the implementation, not the database contents.
-- The Excel and Power BI files are analytical deliverables and contain embedded **sample Northwind data**. They are not live production systems.
+- The Access database is published with **sample Northwind records**. The full SQL dump, raw CSV dataset, and WordPress site backup are excluded. SQL source files document the implementation.
+- The Excel and Power BI files are analytical deliverables and also contain embedded **sample Northwind data**. They are not live production systems.
 - The report uses a modeled 30% profit margin; profit-related conclusions depend on that assumption.
 - The original LaTeX source refers to 54 images at machine-specific paths and is kept locally. The public PDF retains the complete report body while removing student IDs from its cover.
-- The full pipeline cannot be rerun from this repository alone because the raw data, local databases, and WordPress environment are intentionally excluded.
+- The full pipeline cannot be rerun from this repository alone because the raw CSVs, MySQL database state, and WordPress environment are intentionally excluded.
 
 ## Project context
 

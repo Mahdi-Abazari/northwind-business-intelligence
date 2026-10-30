@@ -14,6 +14,7 @@ The Power BI file contains seven report pages: Company Overview, Profitability &
 | --- | --- | --- |
 | Python preparation | [`data_preprocessing.ipynb`](../Phase_1_DataPreprocessing_python/data_preprocessing.ipynb) | Missing-value handling, duplicate checks, type corrections, and feature engineering |
 | Excel operations | [`operational_analysis.xlsm`](../Phase_2_Operational_Data_preparation_Excel/operational_analysis.xlsm) | Workbook model, Power Query connections, validation, and VBA |
+| Access prototype | [`phase3_Group1.accdb`](../Phase_3_Transactional_Database_Design_Access/phase3_Group1.accdb) | Transactional tables, relationships, forms, reports, and sample Northwind records |
 | SQL engineering | [`Phase_4_Data_Engineering_SQL/`](../Phase_4_Data_Engineering_SQL/) | DDL, analytical joins and aggregation, pricing analysis, indexing, stress testing, and views |
 | BI model | [`Phase_5_Group1.pbix`](../Phase_5_Strategic_Business_Intelligence_PowerBI/Phase_5_Group1.pbix) | Seven report pages and saved semantic model |
 | Full narrative | [`Project_Report_Public.pdf`](Project_Report_Public.pdf) | Design rationale, dashboard interpretation, and WordPress phase |
@@ -29,6 +30,6 @@ The public Python notebook has its execution outputs cleared, so it contains cod
 
 ## Constraints and reproducibility
 
-The local Access database, full SQL dump, raw CSV files, and WordPress backup are intentionally excluded. The SQL scripts include operations that create or change schema objects, so they should be reviewed and executed in a disposable Northwind environment. The Power BI file can be inspected as a saved artifact; a data refresh requires reconnecting a local Northwind source. The Excel workbook similarly requires the original inputs for refresh. The complete report is in Persian; its public edition replaces only the cover to omit student numbers.
+The Access database is included with sample Northwind records. The full SQL dump, raw CSV files, and WordPress backup are intentionally excluded. The SQL scripts include operations that create or change schema objects, so they should be reviewed and executed in a disposable Northwind environment. The Power BI file can be inspected as a saved artifact; a data refresh requires reconnecting a local Northwind source. The Excel workbook similarly requires the original inputs for refresh. The complete report is in Persian; its public edition replaces only the cover to omit student numbers.
 
 The original LaTeX report source depends on 54 figures stored at absolute paths outside this folder, so it is not presented as a reproducible source build. The repository presents the finished report and the surviving source artifacts without implying that every local environment can be recreated from GitHub alone.
